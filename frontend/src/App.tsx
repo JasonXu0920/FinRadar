@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ChangeEvent, useState, SyntheticEvent} from 'react';
 import './App.css';
+import CardList from './Components/CardList/CardList';
+import Search from './Components/Search/Search';
 
 function App() {
+  const [search,setSearch] = useState<string>("");
+  
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) =>{
+        setSearch(e.target.value);
+        console.log(e);
+    };
+
+    const onClick = (e:SyntheticEvent) =>{
+        console.log(e);
+    };
+    
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Search onClick={onClick} 
+          search={search}
+          handleChange={(e) => handleChange(e)}
+        ></Search>
+        <CardList></CardList>
     </div>
   );
 }
