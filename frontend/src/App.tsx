@@ -31,6 +31,7 @@ function App() {
           search={search}
           handleChange={(e) => handleChange(e)}
         ></Search>
+        {serverError && <h1>{serverError}</h1>}
         <CardList></CardList>
     </div>
   );
