@@ -78,3 +78,5 @@ D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Microsoft.AspNe
 D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
