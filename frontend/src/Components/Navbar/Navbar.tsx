@@ -9,10 +9,12 @@ const Navbar = (props: Props) => {
         <nav className="relative container mx-auto p-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-20">
-              <Link to='/'></Link>
-              <img src={logo} alt="" />
+              <Link to="/">
+                <img src={logo} alt="" />
+              </Link>
+              
               <div className="hidden font-bold lg:flex">
-                <Link to="/search" className="text-black hover:text-darkBlue">
+                <Link to="/search" className="text-black font-bold hover:text-darkBlue">
                   Search
                 </Link>
               </div>

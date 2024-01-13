@@ -22,40 +22,40 @@ const Sidebar = (props: Props) => {
 
               <div className="md:flex-col md:min-w-full flex flex-col list-none">
 
-                <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+                <h5 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-2 pb-4 no-underline">
 
                   <Link 
                     to='company-profile' 
-                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 no-underline'
+                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt-2 no-underline hover:text-darkBlue'
                   >
                       <FaHome />
-                      <h6 className='ml-3'>Company Profile</h6>
+                      <h5 className='ml-3'>Company Profile</h5>
                   </Link>
 
                   <Link 
                     to='income-statement' 
-                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 no-underline'
+                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt-2 no-underline hover:text-darkBlue'
                   >
                       <FaHome />
-                      <h6 className='ml-3'>Income Statement</h6>
+                      <h5 className='ml-3'>Income Statement</h5>
                   </Link>
 
                   <Link 
                     to='balance-sheet' 
-                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 no-underline'
+                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt-2 no-underline hover:text-darkBlue'
                   >
                       <FaHome />
-                      <h6 className='ml-3'>Balance Sheet</h6>
+                      <h5 className='ml-3'>Balance Sheet</h5>
                   </Link>
 
                   <Link 
                     to='cashflow-statement' 
-                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 no-underline'
+                    className='flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt-2 no-underline hover:text-darkBlue'
                   >
                       <FaHome />
-                      <h6 className='ml-3'>Cashflow Statement</h6>
+                      <h5 className='ml-3'>Cashflow Statement</h5>
                   </Link>
-                </h6>
+                </h5>
 
               </div>
 
