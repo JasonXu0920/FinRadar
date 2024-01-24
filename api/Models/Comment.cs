@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace api.Models
 {
+    [Table("Comments")]
     public class Comment
     {   
         public int Id { get; set; }

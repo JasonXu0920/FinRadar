@@ -80,3 +80,4 @@ D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Newtonsoft.Json
 D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\practice_projects\ReactProjects\FinRadar\api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\practice_projects\ReactProjects\FinRadar\api\obj\Debug\net7.0\api.sourcelink.json
