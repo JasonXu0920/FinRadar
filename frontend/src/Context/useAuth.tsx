@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 import { UserProfile } from "../Models/User";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import { loginAPI, registerAPI } from "../Services/AuthService";
+import { toast } from "react-toastify";
 import React from "react";
 import axios from "axios";
 
@@ -31,7 +31,7 @@ export const UserProvider = ({ children }: Props) => {
     if (user && token) {
       setUser(JSON.parse(user));
       setToken(token);
-      axios.defaults.headers.common["Authorization"] = "Bearer" + token;
+      axios.defaults.headers.common["Authorization"] = "Bearer " + token;
     }
     setIsReady(true);
   }, []);
@@ -46,13 +46,13 @@ export const UserProvider = ({ children }: Props) => {
         if (res) {
           localStorage.setItem("token", res?.data.token);
           const userObj = {
-            userName: res?.data.username,
+            userName: res?.data.userName,
             email: res?.data.email,
           };
           localStorage.setItem("user", JSON.stringify(userObj));
           setToken(res?.data.token!);
           setUser(userObj!);
-          toast.success("Login Sucess!");
+          toast.success("Login Success!");
           navigate("/search");
         }
       })
@@ -65,7 +65,7 @@ export const UserProvider = ({ children }: Props) => {
         if (res) {
           localStorage.setItem("token", res?.data.token);
           const userObj = {
-            userName: res?.data.username,
+            userName: res?.data.userName,
             email: res?.data.email,
           };
           localStorage.setItem("user", JSON.stringify(userObj));
@@ -75,7 +75,7 @@ export const UserProvider = ({ children }: Props) => {
           navigate("/search");
         }
       })
-      .catch((e) => toast.warning("Server error occured"));
+      .catch((e) => toast.warning("Server error occurred"));
   };
 
   const isLoggedIn = () => {
@@ -94,8 +94,7 @@ export const UserProvider = ({ children }: Props) => {
     <UserContext.Provider
       value={{ loginUser, user, token, logout, isLoggedIn, registerUser }}
     >
-        {isReady ? children : null}
-    
+      {isReady ? children : null}
     </UserContext.Provider>
   );
 };
