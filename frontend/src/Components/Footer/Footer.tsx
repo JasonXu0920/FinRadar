@@ -1,31 +1,32 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-type Props = {}
+type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-white rounded-lg shadow m-4 pt-11 dark:bg-gray-800">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" className="hover:underline">JxTech™</a>. All Rights Reserved.
-        </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-                <a href="/" className="hover:underline me-4 md:me-6">About</a>
-            </li>
-            <li>
-                <a href="/" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="/" className="hover:underline me-4 md:me-6">Licensing</a>
-            </li>
-            <li>
-                <a href="/" className="hover:underline">Contact</a>
-            </li>
-        </ul>
+    <footer className="relative container mx-auto p-6 bottom-0 mt-auto dark:bg-gray-800">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-20 ml-5">
+          <Link to="/">©2023 JxTech. All Rights Reserved.</Link>
         </div>
+        <div className="hidden lg:flex items-center space-x-6 text-back">
+          <Link to="/" className="hover:text-darkBlue hover:underline">
+            About
+          </Link>
+          <Link to="/" className="hover:text-darkBlue hover:underline">
+            Privacy Policy
+          </Link>
+          <Link to="/" className="hover:text-darkBlue hover:underline">
+            Licensing
+          </Link>
+          <Link to="/" className="hover:text-darkBlue hover:underline">
+            Contact
+          </Link>
+        </div>
+      </div>
     </footer>
+  );
+};
 
-  )
-}
-
-export default Footer
+export default Footer;
